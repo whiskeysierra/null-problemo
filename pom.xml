@@ -264,7 +264,7 @@
                 <plugin>
                     <groupId>org.moditect</groupId>
                     <artifactId>moditect-maven-plugin</artifactId>
-                    <version>1.0.0.RC2</version>
+                    <version>1.0.0.RC3</version>
                     <!-- 
                         This plugin provides most of the heavy lifting to support Java 9+,
                         until we move away from Java 8 (in favor of 11 or a newer LTS).
@@ -288,7 +288,7 @@
                                 <goal>add-module-info</goal>
                             </goals>
                             <configuration>
-                                <jvmVersion>9</jvmVersion>
+                                <jvmVersion>base</jvmVersion>
                                 <module>
                                     <moduleInfoFile>${project.build.sourceDirectory}/module-info.java</moduleInfoFile>
                                 </module>
